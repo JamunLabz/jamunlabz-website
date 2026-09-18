@@ -372,6 +372,13 @@ section{ position: relative; }
 }
 .diagram__svg{ width: 100%; height: auto; }
 
+.diagram__svg--mobile{ display: none; }
+
+@media (max-width: 860px){
+  .diagram__svg--desktop{ display: none; }
+  .diagram__svg--mobile{ display: block; }
+}
+
 .dg-node{
   fill: rgba(255,255,255,0.04);
   stroke: rgba(255,255,255,0.14);
