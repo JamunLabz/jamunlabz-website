@@ -45,72 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  /* ---------- Consult page: scheduling + mock payment ---------- */
-  // const slots = document.querySelectorAll('.slot');
-  // const paymentStep = document.querySelector('.payment-step');
-  // const selectedTimeEl = document.querySelector('[data-selected-time]');
-
-  // if (slots.length) {
-  //   slots.forEach(slot => {
-  //     slot.addEventListener('click', () => {
-  //       slots.forEach(s => s.classList.remove('selected'));
-  //       slot.classList.add('selected');
-
-  //       if (selectedTimeEl) {
-  //         const day = slot.dataset.day || '';
-  //         const time = slot.textContent.trim();
-  //         selectedTimeEl.textContent = `${day}, ${time}`;
-  //       }
-
-  //       if (paymentStep) {
-  //         paymentStep.classList.add('is-active');
-  //         window.setTimeout(() => {
-  //           paymentStep.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  //         }, 120);
-  //       }
-  //     });
-  //   });
-  // }
-
-  // const payForm = document.querySelector('.pay-form');
-  // if (payForm) {
-  //   payForm.addEventListener('submit', (e) => {
-  //     e.preventDefault();
-  //     const btn = payForm.querySelector('button[type="submit"]');
-  //     const status = document.querySelector('.form-status[data-pay-status]');
-  //     if (btn) {
-  //       btn.textContent = 'Confirming…';
-  //       btn.disabled = true;
-  //     }
-  //     window.setTimeout(() => {
-  //       if (btn) {
-  //         btn.textContent = 'Booking confirmed';
-  //       }
-  //       if (status) status.classList.add('is-visible');
-  //     }, 900);
-  //   });
-  // }
-
-
-
-  
-  /* ---------- Contact form (visual only) ---------- */
-  // const contactForm = document.querySelector('.contact-form');
-  // if (contactForm) {
-  //   contactForm.addEventListener('submit', (e) => {
-  //     e.preventDefault();
-  //     const btn = contactForm.querySelector('button[type="submit"]');
-  //     const status = document.querySelector('.form-status[data-contact-status]');
-  //     if (btn) {
-  //       btn.textContent = 'Sending…';
-  //       btn.disabled = true;
-  //     }
-  //     window.setTimeout(() => {
-  //       if (btn) btn.textContent = 'Sent';
-  //       if (status) status.classList.add('is-visible');
-  //     }, 800);
-  //   });
-  // }
 
 
 
@@ -157,3 +91,46 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+
+
+
+
+  /* ---------- Know your consultant: flip card + stat count-up ---------- */
+  const consultantFlip = document.querySelector('.consultant-flip');
+  if (consultantFlip) {
+    const flipBtn = consultantFlip.querySelector('.consultant-flip-toggle');
+    const stage = consultantFlip.closest('.consultant-stage');
+    if (flipBtn) {
+      flipBtn.addEventListener('click', () => {
+        const flipped = consultantFlip.classList.toggle('is-flipped');
+        if (stage) stage.classList.toggle('is-flipped', flipped);
+        flipBtn.setAttribute('aria-pressed', flipped ? 'true' : 'false');
+      });
+    }
+  }
+
+  const countEls = document.querySelectorAll('[data-count]');
+  if (countEls.length && 'IntersectionObserver' in window &&
+      !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const runCount = (el) => {
+      const target = parseInt(el.dataset.count, 10) || 0;
+      const duration = 1400;
+      const start = performance.now();
+      const tick = (now) => {
+        const p = Math.min((now - start) / duration, 1);
+        el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+    const countIO = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          runCount(entry.target);
+          countIO.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.6 });
+    countEls.forEach(el => { el.textContent = '0'; countIO.observe(el); });
+  }
