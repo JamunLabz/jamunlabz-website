@@ -4,10 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — Jamun Labz</title>
+<meta name="description" content="Not ready to book a consult? Tell Jamun Labz what's going on and a real person will reply, usually within a business day.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 
 <!-- Favicons -->
 <link rel="icon" href="logo_withoutBG_favicon_32x32.png">
@@ -19,7 +21,7 @@
 <header class="site-header">
   <div class="wrap">
     <a href="index.html" class="brand">
-      <img src="logo_withoutBG_favicon_48x48.png" alt="Jamun Labz Logo" class="brand-mark">
+      <img src="logo_withoutBG_favicon_48x48.png" alt="" class="brand-mark">
       Jamun Labz
     </a>
     <nav class="nav-links">
@@ -52,34 +54,6 @@
           <p>No ticketing system, no auto-reply chains. Someone on the team
           reads what you send and replies directly — usually within a business day.</p>
         </div>
-
-        <!-- <form class="contact-form reveal" style="display:grid; gap:20px;">
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Your full name" required>
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="you@company.com" required>
-          </div>
-          <div class="field">
-            <label for="service">Which service are you interested in?</label>
-            <select id="service" required>
-              <option value="" disabled selected>Select one</option>
-              <option>ERP Consulting</option>
-              <option>Solutions Design</option>
-              <option>Project Management</option>
-              <option>Digital Marketing</option>
-              <option>Not sure yet (try explaining the problem)</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="comment">Tell us a bit about the problem (optional)</label>
-            <textarea id="comment" rows="5" placeholder="What's not working right now?"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="justify-content:center;">Send</button>
-          <p class="form-status" data-contact-status>Thanks — we've received your message and will get back to you shortly.</p>
-        </form> -->
        
         <!-- Real Working Contact Form with Web3Forms Services -->
 
@@ -111,7 +85,8 @@
             <textarea id="comment" name="comment" rows="5" placeholder="What's not working right now?"></textarea>
           </div>
           <button type="submit" class="btn btn-primary" style="justify-content:center;">Send</button>
-          <p class="form-status" data-contact-status>Thanks — we've received your message and will get back to you shortly.</p>
+          <p class="form-status" data-contact-status role="status">Thanks — we've received your message and will get back to you shortly.</p>
+          <p class="form-error" data-contact-error role="alert"></p>
         </form>
       </div>
     </div>
@@ -124,7 +99,7 @@
     <div class="footer-top">
       <div>
         <div class="footer-brand">
-          <img src="logo_withoutBG_favicon_48x48.png" alt="Jamun Labz Logo" class="brand-mark">
+          <img src="logo_withoutBG_favicon_48x48.png" alt="" class="brand-mark">
           Jamun Labz
         </div>
         <p class="footer-tag">A boutique consulting practice for businesses that need their systems to work together.</p>
@@ -196,7 +171,7 @@
           <a href="contact.html">Ask a question</a>
         </div>
         <div class="footer-col">
-          <h5>Terms & Policies</h5>
+          <h5>Terms &amp; Policies</h5>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
         </div>
