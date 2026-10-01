@@ -56,6 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const btn = contactForm.querySelector('button[type="submit"]');
       const status = document.querySelector('.form-status[data-contact-status]');
+      const errorBox = document.querySelector('[data-contact-error]');
+      if (errorBox) errorBox.classList.remove('is-visible');
 
       const name = contactForm.name.value.trim();
       const service = contactForm.service.value;
@@ -75,25 +77,24 @@ document.addEventListener('DOMContentLoaded', () => {
           body: new FormData(contactForm)
         });
         const result = await res.json();
-        if (result.success) {
+       if (result.success) {
           if (btn) btn.textContent = 'Sent';
           if (status) status.classList.add('is-visible');
           contactForm.reset();
+          setTimeout(() => {
+            if (btn) { btn.textContent = 'Send'; btn.disabled = false; }
+            if (status) status.classList.remove('is-visible');
+          }, 6000);
         } else {
           if (btn) { btn.textContent = 'Send'; btn.disabled = false; }
-          alert('Something went wrong — please try again.');
+          if (errorBox) { errorBox.textContent = 'Something went wrong — please try again.'; errorBox.classList.add('is-visible'); }
         }
       } catch (err) {
         if (btn) { btn.textContent = 'Send'; btn.disabled = false; }
-        alert('Network error — please try again.');
+        if (errorBox) { errorBox.textContent = 'Network error — please check your connection and try again.'; errorBox.classList.add('is-visible'); }
       }
     });
   }
-
-});
-
-
-
 
 
   /* ---------- Know your consultant: flip card + stat count-up ---------- */
@@ -134,3 +135,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.6 });
     countEls.forEach(el => { el.textContent = '0'; countIO.observe(el); });
   }
+
+});
