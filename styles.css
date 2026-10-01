@@ -47,7 +47,8 @@ html{ scroll-behavior: smooth; }
 
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior: auto; }
-  *{ animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  *{ animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  .flow-path{ animation: none; }
 }
 
 body{
@@ -165,6 +166,8 @@ section{ position: relative; }
   height: 2px;
   background: var(--accent);
 }
+
+.nav-links a.nav-cta.active::after{ display: none; }
 
 .nav-cta{
   background: var(--ink);
@@ -927,6 +930,14 @@ section{ position: relative; }
   display: none;
 }
 .form-status.is-visible{ display: block; }
+
+.form-error{
+  margin-top: 18px;
+  font-size: 14.5px;
+  color: #B3261E;
+  display: none;
+}
+.form-error.is-visible{ display: block; }
 
 
 
