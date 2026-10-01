@@ -4,10 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jamun Labz — Systems, connected.</title>
+<meta name="description" content="Jamun Labz is a boutique consulting practice that designs, connects and automates the business systems behind growing companies.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 
 <!-- Favicons -->
 <link rel="icon" href="logo_withoutBG_favicon_32x32.png">
@@ -19,14 +21,7 @@
 <header class="site-header">
   <div class="wrap">
     <a href="index.html" class="brand">
-      <!-- <svg class="brand-mark" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="5" r="2.6" fill="#0B0B0D"/>
-        <circle cx="5" cy="18" r="2.6" fill="#33507A"/>
-        <circle cx="19" cy="18" r="2.6" fill="#0B0B0D"/>
-        <path d="M12 7.6L6.2 15.8M12 7.6L17.8 15.8" stroke="#0B0B0D" stroke-width="1.1" stroke-opacity="0.35"/>
-      </svg> -->
-
-      <img src="logo_withoutBG_favicon_48x48.png" alt="Jamun Labz Logo" class="brand-mark">
+      <img src="logo_withoutBG_favicon_48x48.png" alt="" class="brand-mark">
       Jamun Labz
     </a>
     <nav class="nav-links">
@@ -55,7 +50,8 @@
         </div>
       </div>
 
-      <div class="hero-graphic reveal" data-parallax="0.03">
+      <div class="hero-graphic reveal">
+      <div data-parallax="0.03" style="width:100%;height:100%;">
         <svg viewBox="0 0 900 500" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
           <defs>
             <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
@@ -95,6 +91,7 @@
           <circle cx="450" cy="250" r="46" fill="none" stroke="#F6F5F2" stroke-opacity="0.25" stroke-width="1"/>
           <circle cx="450" cy="250" r="6" fill="#F6F5F2"/>
         </svg>
+        </div>
       </div>
     </div>
   </section>
@@ -161,6 +158,7 @@
               <stop offset="50%" stop-color="#C9A876" stop-opacity="0.9"/>
               <stop offset="100%" stop-color="#C9A876" stop-opacity="0.1"/>
             </linearGradient>
+            <filter id="dgBlur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
             <radialGradient id="dgCore" cx="50%" cy="40%" r="60%">
               <stop offset="0%" stop-color="#F3E6C9"/>
               <stop offset="60%" stop-color="#C9A876"/>
@@ -190,7 +188,7 @@
             <path class="flow-path" d="M560 215 C 660 215, 660 300, 800 300" />
           </g>
 
-          <circle cx="500" cy="207" r="58" fill="url(#dgCore)" opacity="0.16" filter="blur(14px)"/>
+          <circle cx="500" cy="207" r="58" fill="url(#dgCore)" opacity="0.16" filter="url(#dgBlur)"/>
           <circle cx="500" cy="207" r="38" fill="url(#dgCore)"/>
           <text x="500" y="212" class="dg-core-label">Jamun Labz</text>
 
@@ -213,7 +211,8 @@
               <stop offset="50%" stop-color="#C9A876" stop-opacity="0.9"/>
               <stop offset="100%" stop-color="#C9A876" stop-opacity="0.1"/>
             </linearGradient>
-            <radialGradient id="dgCoreM" cx="50%" cy="40%" r="60%">
+            <filter id="dgBlurM" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+            <radialGradient id="dgCoreM" cx="50%" cy="40%" r="60%"> 
               <stop offset="0%" stop-color="#F3E6C9"/>
               <stop offset="60%" stop-color="#C9A876"/>
               <stop offset="100%" stop-color="#7A5F3B"/>
@@ -242,7 +241,7 @@
             <text x="250" y="104" class="dg-label">Customer data</text>
           </g>
 
-          <circle cx="170" cy="195" r="60" fill="url(#dgCoreM)" opacity="0.16" filter="blur(14px)"/>
+          <circle cx="170" cy="195" r="60" fill="url(#dgCoreM)" opacity="0.16" filter="url(#dgBlurM)"/>
           <circle cx="170" cy="195" r="42" fill="url(#dgCoreM)"/>
           <text x="170" y="199" class="dg-core-label">Jamun Labz</text>
 
@@ -301,15 +300,8 @@
     <div class="footer-top">
       <div>
         <div class="footer-brand">
-          <!-- <svg class="brand-mark" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="5" r="2.6" fill="#F6F5F2"/>
-            <circle cx="5" cy="18" r="2.6" fill="#6C89B8"/>
-            <circle cx="19" cy="18" r="2.6" fill="#F6F5F2"/>
-          </svg> -->
-          <div class="footer-brand">
-           <img src="logo_withoutBG_favicon_48x48.png" alt="Jamun Labz Logo" class="brand-mark">
-            Jamun Labz
-          </div>
+          <img src="logo_withoutBG_favicon_48x48.png" alt="" class="brand-mark">
+          Jamun Labz
         </div>
         <p class="footer-tag">A boutique consulting practice for businesses that need their systems to work together.</p>
         
@@ -380,7 +372,7 @@
           <a href="contact.html">Ask a question</a>
         </div>
         <div class="footer-col">
-          <h5>Terms & Policies</h5>
+          <h5>Terms &amp; Policies</h5>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
         </div>
