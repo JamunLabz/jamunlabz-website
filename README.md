@@ -89,7 +89,7 @@ The site has no dependencies, so any static file server works.
 3. Right-click `index.html` and choose **Open with Live Server**.
 4. The site opens at `http://127.0.0.1:5500/index.html`.
 
-> Open the project folder itself, not a parent folder. Asset paths start with `/` (for example `/styles.css`), so the server's root must be this folder.
+> All pages use relative paths (for example `styles.css`), so the site works at a domain root (jamunlabz.com), inside a subfolder (GitHub Pages preview) and in Live Server.
 
 ### Option B — Any other static server
 
@@ -103,7 +103,7 @@ npx serve .
 
 ### What does not work locally
 
-- Opening the HTML files by double-clicking them (`file://...`). The paths starting with `/` will not resolve. Use a local server.
+- Opening the HTML files by double-clicking them (`file://...`). Some features need a real server. Use Live Server.
 - The custom `404.html` page. Live Server shows its own error for unknown URLs; Cloudflare uses `404.html` on the live site.
 - The `_headers` file. It only takes effect on Cloudflare.
 
@@ -111,21 +111,25 @@ npx serve .
 
 ## How links work (important)
 
-All internal links use the `.html` form, for example:
+All internal links and asset paths are **relative**, for example:
 
 ```html
-<a href="/services.html">Services</a>
-<a href="/services.html#erp-consulting">ERP Consulting</a>
+<link rel="stylesheet" href="styles.css">
+<a href="./">Home</a>
+<a href="services.html">Services</a>
+<a href="services.html#erp-consulting">ERP Consulting</a>
 ```
 
 This is deliberate:
 
-- **Locally**, Live Server needs the real file name, so `.html` links work.
+- **Locally (Live Server)** and on the **GitHub Pages preview** (`jamunlabz.github.io/jamunlabz-website/`), relative paths work even though the site sits in a subfolder.
 - **On Cloudflare Pages**, a visit to `/services.html` is automatically redirected to the clean URL `/services`, so visitors always see clean addresses.
 
-The **canonical tags**, **Open Graph URLs** and **sitemap.xml** use the clean form (`https://jamunlabz.com/services`). Leave them that way. They tell search engines which address to index.
+**Exception — `404.html`:** this page uses absolute paths starting with `/` (`/styles.css`, `/services.html`). Cloudflare serves it at whatever broken URL was requested (for example `/a/b/c`), where relative paths would fail. It looks unstyled on the GitHub Pages preview; that is expected.
 
-When you add a new link, use the `.html` form. The home page link is simply `/`.
+The **canonical tags**, **Open Graph URLs** and **sitemap.xml** use full clean URLs (`https://jamunlabz.com/services`). Leave them that way. They tell search engines which address to index.
+
+When you add a new link or asset, use a relative path (no leading `/`), except in `404.html`.
 
 ---
 
@@ -346,6 +350,8 @@ Main breakpoints: `560px`, `860px` (mobile menu), `900px`, `980px`, `1000px` (le
 
 Every push to the main branch redeploys the site automatically. Pushes to other branches create preview deployments.
 
+Once Cloudflare is live, turn off the GitHub Pages preview (**Settings → Pages → Branch: None**) so only one copy of the site is online.
+
 ---
 
 ## Pre-launch checklist
@@ -368,7 +374,7 @@ Before going live, confirm:
 - **Use the CSS variables** for colours, fonts and spacing.
 - **Put styles in `styles.css`.** Small page-only styles may go in a `<style>` block in that page's `<head>`, as on `contact.html` and `404.html`.
 - **Keep headers and footers identical** across all pages.
-- **Use `.html` links internally** and clean URLs in canonical tags and the sitemap.
+- **Use relative `.html` links internally** (absolute only in `404.html`) and full clean URLs in canonical tags and the sitemap.
 - **Test before pushing:** check the page on a phone-sized window (360px) and a laptop-sized window, and click every link you touched.
 - **Keep image sizes small.** Compress images before adding them.
 
