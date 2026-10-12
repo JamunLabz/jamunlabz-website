@@ -2,95 +2,202 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jamun Labz — Systems, connected.</title>
-<meta name="description" content="Jamun Labz is a boutique consulting practice that designs, connects and automates the business systems behind growing companies.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Jamun Labz | Boutique Business &amp; ERP Consulting</title>
+<meta name="description" content="Boutique consulting for ERP and business systems, enterprise development, and process improvement. Business first. Technology that fits.">
+
+<!-- SEO -->
+<link rel="canonical" href="https://jamunlabz.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#F7F4EE">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jamun Labz">
+<meta property="og:title" content="Jamun Labz | Business First. Technology That Fits.">
+<meta property="og:description" content="Boutique consulting for ERP and business systems, enterprise development, and process improvement.">
+<meta property="og:url" content="https://jamunlabz.com/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://jamunlabz.com/og-image.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jamun Labz — Business First. Technology That Fits.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://jamunlabz.com/og-image.png?v=2">
+<meta name="twitter:title" content="Jamun Labz | Business First. Technology That Fits.">
+<meta name="twitter:description" content="Boutique consulting for ERP and business systems, enterprise development, and process improvement.">
+
+<link rel="preload" href="/fonts/manrope-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://jamunlabz.com/#organization",
+      "name": "Jamun Labz",
+      "legalName": "Jamun Labz FZC",
+      "url": "https://jamunlabz.com/",
+      "email": "info@jamunlabz.com",
+      "slogan": "Business First. Technology That Fits.",
+      "description": "A boutique consulting firm that helps businesses simplify operations, improve processes, and make technology work for the people who use it.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "AE"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/jamun-labz/",
+        "https://github.com/JamunLabz"
+      ],
+      "knowsAbout": [
+        "ERP consulting",
+        "Oracle NetSuite",
+        "SAP ABAP development",
+        "Enterprise system integrations",
+        "Business process improvement",
+        "Technology assessment and advisory",
+        "Project management"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://jamunlabz.com/#website",
+      "url": "https://jamunlabz.com/",
+      "name": "Jamun Labz",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://jamunlabz.com/#organization" }
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/styles.css">
 <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 
-<!-- Favicons -->
-<link rel="icon" href="logo_withoutBG_favicon_32x32.png">
-<link rel="icon" type="image/png" sizes="32x32" href="logo_withoutBG_favicon_32x32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="logo_withoutBG_favicon_48x48.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/logo_withoutBG_favicon_32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/icons/logo_withoutBG_favicon_48x48.png">
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
 <header class="site-header">
   <div class="wrap">
-    <a href="index.html" class="brand">
-      <img src="logo_withoutBG_favicon_48x48.png" alt="" class="brand-mark">
+    <a href="/" class="brand" aria-label="Jamun Labz home">
+      <img src="/icons/logo_withoutBG_favicon_48x48.png" alt="" class="brand-mark" width="32" height="32">
       Jamun Labz
     </a>
-    <nav class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="services.html">Services</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="contact.html">Contact</a>
-      <a href="consult.html" class="nav-cta">Consult</a>
+    <nav class="nav-links" id="site-nav" aria-label="Main">
+      <a href="/" class="active" aria-current="page">Home</a>
+      <a href="/services.html">Services</a>
+      <a href="/contact.html">Contact</a>
     </nav>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
   </div>
 </header>
 
-<main>
+<main id="main">
 
   <!-- HERO -->
   <section class="surface-paper hero">
     <div class="wrap">
       <div class="hero-copy reveal">
-        <h1>Your systems, finally talking to each other.</h1>
-        <p class="hero-sub">Jamun Labz designs, connects, and automates the business
-        systems behind growing companies — so the work moves without you chasing it.</p>
+        <p class="eyebrow"><span>Boutique Consulting</span><span>Business Solutions</span><span>Digital Knowledge</span></p>
+        <h1>Business First.<br> <span class="accent">Technology That Fits.</span></h1>
+        <p class="hero-sub">Every business has its own way of working, its own challenges, and its own ambitions. At Jamun Labz, we believe that understanding the business comes before recommending technology.</p>
         <div class="hero-actions">
-          <a href="consult.html" class="btn btn-primary">Consult</a>
-          <a href="services.html" class="btn btn-ghost">See what we do</a>
+          <a href="/contact.html" class="btn btn-primary">Let's Talk Business</a>
+          <a href="/services.html" class="btn btn-ghost">Explore our services</a>
         </div>
       </div>
 
-      <div class="hero-graphic reveal">
-      <div data-parallax="0.03" style="width:100%;height:100%;">
-        <svg viewBox="0 0 900 500" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
-          <defs>
-            <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
-              <stop offset="0%" stop-color="#33507A" stop-opacity="0.16"/>
-              <stop offset="100%" stop-color="#33507A" stop-opacity="0"/>
-            </radialGradient>
-            <linearGradient id="nodeMetal" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#3E5C89"/>
-              <stop offset="55%" stop-color="#1E2E48"/>
-              <stop offset="100%" stop-color="#0B0B0D"/>
-            </linearGradient>
-            <linearGradient id="nodeMetalLight" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#8FA3C4"/>
-              <stop offset="100%" stop-color="#33507A"/>
-            </linearGradient>
-            <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
-              <feGaussianBlur stdDeviation="10" result="b"/>
-              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-            </filter>
-          </defs>
+      <div class="hero-graphic hero-orbit reveal">
+        <div data-parallax="0.03" style="width:100%;height:100%;">
+          <svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jamun Labz at the centre, connecting ERP, development, process and knowledge" style="width:100%;height:100%;">
 
-          <rect width="900" height="500" fill="url(#glow1)"/>
+            <g class="orbit-lines">
+              <path d="M96 96 C 110 190, 210 150, 280 220"/>
+              <path d="M464 96 C 450 190, 350 150, 280 220"/>
+              <path d="M96 344 C 200 350, 220 290, 280 220"/>
+              <path d="M464 344 C 360 350, 340 290, 280 220"/>
+            </g>
 
-          <g stroke="#33507A" stroke-opacity="0.35" stroke-width="1.4" fill="none">
-            <path d="M170 250 C 300 130, 400 130, 450 250" />
-            <path d="M450 250 C 500 370, 600 370, 730 250" />
-            <path d="M170 250 C 250 350, 380 380, 450 250" />
-            <path d="M450 250 C 560 150, 650 150, 730 250" />
-          </g>
+            <g class="orbit-sparkles">
+              <path transform="translate(322 78)" d="M0 -8 L1.8 -1.8 L8 0 L1.8 1.8 L0 8 L-1.8 1.8 L-8 0 L-1.8 -1.8 Z"/>
+              <path transform="translate(440 214)" d="M0 -7 L1.6 -1.6 L7 0 L1.6 1.6 L0 7 L-1.6 1.6 L-7 0 L-1.6 -1.6 Z"/>
+              <path transform="translate(206 374)" d="M0 -7 L1.6 -1.6 L7 0 L1.6 1.6 L0 7 L-1.6 1.6 L-7 0 L-1.6 -1.6 Z"/>
+              <path transform="translate(118 228)" d="M0 -7 L1.6 -1.6 L7 0 L1.6 1.6 L0 7 L-1.6 1.6 L-7 0 L-1.6 -1.6 Z"/>
+              <path transform="translate(334 392)" d="M0 -6 L1.4 -1.4 L6 0 L1.4 1.4 L0 6 L-1.4 1.4 L-6 0 L-1.4 -1.4 Z"/>
+              <path transform="translate(226 62)" d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 Z"/>
+            </g>
 
-          <circle cx="170" cy="250" r="16" fill="url(#nodeMetal)"/>
-          <circle cx="730" cy="250" r="16" fill="url(#nodeMetal)"/>
-          <circle cx="450" cy="120" r="10" fill="url(#nodeMetal)"/>
-          <circle cx="450" cy="380" r="10" fill="url(#nodeMetal)"/>
+            <circle class="orbit-core-halo" cx="280" cy="220" r="86"/>
+            <circle class="orbit-core-ring" cx="280" cy="220" r="68"/>
+            <circle class="orbit-core" cx="280" cy="220" r="50"/>
+            <text class="orbit-core-label" x="280" y="220" dy="0.35em">JL</text>
 
-          <circle cx="450" cy="250" r="46" fill="url(#nodeMetalLight)" filter="url(#soft)"/>
-          <circle cx="450" cy="250" r="46" fill="none" stroke="#F6F5F2" stroke-opacity="0.25" stroke-width="1"/>
-          <circle cx="450" cy="250" r="6" fill="#F6F5F2"/>
-        </svg>
+            <!-- ERP -->
+            <g class="orbit-node" transform="translate(96 96)">
+              <circle class="orbit-node-halo" r="52"/>
+              <circle class="orbit-node-ring" r="40"/>
+              <g class="orbit-icon">
+                <path d="M0 -15 L16 -7 L0 1 L-16 -7 Z"/>
+                <path d="M-16 0 L0 8 L16 0"/>
+                <path d="M-16 7 L0 15 L16 7"/>
+              </g>
+              <text class="orbit-label" y="74">ERP</text>
+            </g>
+
+            <!-- Development -->
+            <g class="orbit-node" transform="translate(464 96)">
+              <circle class="orbit-node-halo" r="52"/>
+              <circle class="orbit-node-ring" r="40"/>
+              <g class="orbit-icon">
+                <path d="M-7 -11 L-17 0 L-7 11"/>
+                <path d="M7 -11 L17 0 L7 11"/>
+                <path d="M3 -14 L-3 14"/>
+              </g>
+              <text class="orbit-label" y="74">Development</text>
+            </g>
+
+            <!-- Knowledge -->
+            <g class="orbit-node orbit-node--brass" transform="translate(96 344)">
+              <circle class="orbit-node-halo" r="52"/>
+              <circle class="orbit-node-ring" r="40"/>
+              <g class="orbit-icon">
+                <path d="M0 -10 C-5 -14 -12 -14 -16 -12 V12 C-12 10 -5 10 0 14 C5 10 12 10 16 12 V-12 C12 -14 5 -14 0 -10 Z"/>
+                <path d="M0 -10 V14"/>
+              </g>
+              <text class="orbit-label" y="-64">Knowledge</text>
+            </g>
+
+            <!-- Process -->
+            <g class="orbit-node" transform="translate(464 344)">
+              <circle class="orbit-node-halo" r="52"/>
+              <circle class="orbit-node-ring" r="40"/>
+              <g class="orbit-icon">
+                <rect x="-7" y="-16" width="14" height="10" rx="2.5"/>
+                <rect x="-17" y="6" width="13" height="10" rx="2.5"/>
+                <rect x="4" y="6" width="13" height="10" rx="2.5"/>
+                <path d="M0 -6 V0 M-10.5 6 V0 H10.5 V6"/>
+              </g>
+              <text class="orbit-label" y="-64">Process</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="surface-paper section-tight pt-0">
+    <div class="wrap">
+      <div class="intro reveal">
+        <h2 class="intro-statement">Let's make business easier. <em>Together.</em></h2>
+        <div class="intro-body">
+          <p>We bring together experienced consulting professionals who work alongside businesses to simplify operations, improve processes, and make technology work for the people who use it.</p>
+          <p>Whether you're managing everyday operations, improving existing systems, or preparing for your next stage of growth, we're here to help you find what works.</p>
         </div>
       </div>
     </div>
@@ -99,195 +206,102 @@
   <!-- WHAT WE DO -->
   <section class="surface-paper section-tight">
     <div class="wrap">
-      <div class="section-head reveal">
-        <h2>What we do</h2>
-        <p>Four disciplines, one connected practice — brought together only when a client actually needs them.</p>
+      <div class="section-head center reveal">
+        <h2>What We Do</h2>
+        <p>Consulting, technical expertise, and practical knowledge, shaped around how your business actually works.</p>
       </div>
 
-      <div class="highlights reveal">
-        <div class="highlight">
-          <svg class="highlight-mark" viewBox="0 0 34 34" fill="none">
-            <rect x="4" y="4" width="26" height="26" rx="6" stroke="#33507A" stroke-width="1.4"/>
-            <path d="M12 17h10M17 12v10" stroke="#0B0B0D" stroke-width="1.4"/>
+      <div class="pillars">
+        <article class="pillar reveal">
+          <svg class="pillar-mark ico" viewBox="0 0 44 44" aria-hidden="true">
+            <path class="a" d="M22 8 L36 15 L22 22 L8 15 Z"/>
+            <path class="b" d="M8 22 L22 29 L36 22"/>
+            <path class="b" d="M8 29 L22 36 L36 29"/>
           </svg>
-          <h3>ERP Consulting</h3>
-          <p>Straightening out the systems that run your operations, without the disruption of starting over.</p>
-        </div>
-        <div class="highlight">
-          <svg class="highlight-mark" viewBox="0 0 34 34" fill="none">
-            <circle cx="10" cy="10" r="5" stroke="#33507A" stroke-width="1.4"/>
-            <circle cx="24" cy="24" r="5" stroke="#0B0B0D" stroke-width="1.4"/>
-            <path d="M14 14l6 6" stroke="#0B0B0D" stroke-width="1.4"/>
+          <h3>Business Systems &amp; ERP Consulting</h3>
+          <p class="pillar-tag">Make better use of your business systems.</p>
+          <p>We help businesses evaluate, implement, manage, and improve enterprise systems. Our approach begins with understanding your operations and identifying solutions that fit your processes, people, and goals.</p>
+        </article>
+
+        <article class="pillar reveal">
+          <svg class="pillar-mark ico" viewBox="0 0 44 44" aria-hidden="true">
+            <rect class="a" x="6" y="9" width="32" height="26" rx="6"/>
+            <path class="b" d="M18 17 L13 22 L18 27 M26 17 L31 22 L26 27"/>
           </svg>
-          <h3>Solutions Design</h3>
-          <p>Mapping how your business should actually work, then designing systems that hold that shape.</p>
-        </div>
-        <div class="highlight">
-          <svg class="highlight-mark" viewBox="0 0 34 34" fill="none">
-            <path d="M6 24V10M17 24V6M28 24V16" stroke="#33507A" stroke-width="1.4"/>
-            <path d="M4 24h26" stroke="#0B0B0D" stroke-width="1.4"/>
+          <h3>Enterprise Technology &amp; Development</h3>
+          <p class="pillar-tag">Technical expertise that supports real business needs.</p>
+          <p>From system enhancements and integrations to specialized enterprise development, we help businesses improve how their technology works together.</p>
+        </article>
+
+        <article class="pillar reveal">
+          <svg class="pillar-mark ico" viewBox="0 0 44 44" aria-hidden="true">
+            <path class="a" d="M22 13 C18 10 12 10 8 11 V33 C12 32 18 32 22 35 C26 32 32 32 36 33 V11 C32 10 26 10 22 13 Z"/>
+            <path class="b" d="M22 13 V35"/>
           </svg>
-          <h3>Project Management</h3>
-          <p>Keeping every workstream, vendor, and deadline moving in one direction — visibly.</p>
-        </div>
-        <div class="highlight">
-          <svg class="highlight-mark" viewBox="0 0 34 34" fill="none">
-            <path d="M5 26 L14 14 L20 20 L29 8" stroke="#33507A" stroke-width="1.4" fill="none"/>
-            <circle cx="29" cy="8" r="2.4" fill="#0B0B0D"/>
-          </svg>
-          <h3>Digital Marketing</h3>
-          <p>Connecting your customer-facing systems to the data that shows what's actually working.</p>
-        </div>
+          <h3>Business &amp; Technology Knowledge</h3>
+          <p class="pillar-tag">Making business knowledge easier to access.</p>
+          <p>Through practical insights, comparisons, and educational content, we explore the relationship between business processes and technology, helping owners, professionals, and growing businesses make informed decisions.</p>
+        </article>
+      </div>
+
+      <div class="pillars-foot reveal">
+        <a href="/services.html" class="btn btn-ghost">See all services
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- HOW SYSTEMS CONNECT -->
+  <!-- WHY JAMUN LABZ -->
   <section class="surface-ink section">
     <div class="wrap">
-      <div class="section-head center reveal">
-        <h2>One connecting layer, not another system to manage</h2>
-        <p>Your tools stay yours. Jamun Labz sits underneath them, moving information where it needs to go.</p>
-      </div>
+      <div class="why-grid">
+        <div class="section-head reveal">
+          <h2>Why Jamun Labz?</h2>
+          <p>Practical experience, honest advice, and an approach that adapts to your business rather than the other way around.</p>
+        </div>
 
-      <div class="diagram">
-        <svg viewBox="0 0 1000 420" class="diagram__svg diagram__svg--desktop">
-          <defs>
-            <linearGradient id="dgLine" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#C9A876" stop-opacity="0.1"/>
-              <stop offset="50%" stop-color="#C9A876" stop-opacity="0.9"/>
-              <stop offset="100%" stop-color="#C9A876" stop-opacity="0.1"/>
-            </linearGradient>
-            <filter id="dgBlur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
-            <radialGradient id="dgCore" cx="50%" cy="40%" r="60%">
-              <stop offset="0%" stop-color="#F3E6C9"/>
-              <stop offset="60%" stop-color="#C9A876"/>
-              <stop offset="100%" stop-color="#7A5F3B"/>
-            </radialGradient>
-          </defs>
+        <article class="why-item reveal">
+          <div class="why-num">01</div>
+          <h3>Experience That Gets to the Point</h3>
+          <p>We bring years of hands-on consulting experience to help identify challenges, evaluate options, and move toward practical solutions without unnecessary complexity.</p>
+        </article>
 
-          <g class="dg-left">
-            <rect x="40" y="60" width="150" height="46" rx="10" class="dg-node"/>
-            <rect x="40" y="130" width="150" height="46" rx="10" class="dg-node"/>
-            <rect x="40" y="200" width="150" height="46" rx="10" class="dg-node"/>
-            <rect x="40" y="270" width="150" height="46" rx="10" class="dg-node"/>
-            <text x="115" y="87" class="dg-label">Finance</text>
-            <text x="115" y="157" class="dg-label">Operations</text>
-            <text x="115" y="227" class="dg-label">Inventory</text>
-            <text x="115" y="297" class="dg-label">Customer data</text>
-          </g>
+        <article class="why-item reveal">
+          <div class="why-num">02</div>
+          <h3>Business Needs Over System Preferences</h3>
+          <p>We don't believe one technology is the answer to every problem. Our recommendations are guided by what makes sense for the business, its people, and its operations.</p>
+        </article>
 
-          <g class="dg-lines" stroke="url(#dgLine)" stroke-width="1.5" fill="none">
-            <path class="flow-path" d="M190 83 C 320 83, 320 190, 440 200" />
-            <path class="flow-path" d="M190 153 C 300 153, 340 195, 440 205" />
-            <path class="flow-path" d="M190 223 C 300 223, 340 215, 440 210" />
-            <path class="flow-path" d="M190 293 C 320 293, 320 220, 440 215" />
-            <path class="flow-path" d="M560 205 C 660 205, 660 90, 800 90" />
-            <path class="flow-path" d="M560 210 C 660 210, 660 160, 800 160" />
-            <path class="flow-path" d="M560 210 C 660 210, 660 230, 800 230" />
-            <path class="flow-path" d="M560 215 C 660 215, 660 300, 800 300" />
-          </g>
+        <article class="why-item reveal">
+          <div class="why-num">03</div>
+          <h3>Objective Advice &amp; Professional Judgment</h3>
+          <p>We bring an independent perspective to business challenges, combining practical experience with objective analysis to evaluate options, challenge assumptions, and recommend solutions that serve the business's best interests.</p>
+        </article>
 
-          <circle cx="500" cy="207" r="58" fill="url(#dgCore)" opacity="0.16" filter="url(#dgBlur)"/>
-          <circle cx="500" cy="207" r="38" fill="url(#dgCore)"/>
-          <text x="500" y="212" class="dg-core-label">Jamun Labz</text>
+        <article class="why-item reveal">
+          <div class="why-num">04</div>
+          <h3>Flexible Thinking, Practical Execution</h3>
+          <p>Every business operates differently. We adapt our approach to the situation while keeping the focus on achievable outcomes.</p>
+        </article>
 
-          <g class="dg-right">
-            <rect x="800" y="65" width="150" height="46" rx="10" class="dg-node"/>
-            <rect x="800" y="135" width="150" height="46" rx="10" class="dg-node"/>
-            <rect x="800" y="205" width="150" height="46" rx="10" class="dg-node"/>
-            <rect x="800" y="275" width="150" height="46" rx="10" class="dg-node"/>
-            <text x="875" y="92" class="dg-label">Reporting</text>
-            <text x="875" y="162" class="dg-label">Automation</text>
-            <text x="875" y="232" class="dg-label">Fulfilment</text>
-            <text x="875" y="302" class="dg-label">Client portal</text>
-          </g>
-        </svg>
-
-        <svg viewBox="0 0 340 400" class="diagram__svg diagram__svg--mobile">
-          <defs>
-            <linearGradient id="dgLineM" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#C9A876" stop-opacity="0.1"/>
-              <stop offset="50%" stop-color="#C9A876" stop-opacity="0.9"/>
-              <stop offset="100%" stop-color="#C9A876" stop-opacity="0.1"/>
-            </linearGradient>
-            <filter id="dgBlurM" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
-            <radialGradient id="dgCoreM" cx="50%" cy="40%" r="60%"> 
-              <stop offset="0%" stop-color="#F3E6C9"/>
-              <stop offset="60%" stop-color="#C9A876"/>
-              <stop offset="100%" stop-color="#7A5F3B"/>
-            </radialGradient>
-          </defs>
-
-          <g class="dg-lines" stroke="url(#dgLineM)" stroke-width="1.5" fill="none">
-            <path class="flow-path" d="M90 60 C 90 100, 130 130, 170 147"/>
-            <path class="flow-path" d="M250 60 C 250 100, 210 130, 170 147"/>
-            <path class="flow-path" d="M90 120 C 110 135, 140 143, 170 147"/>
-            <path class="flow-path" d="M250 120 C 230 135, 200 143, 170 147"/>
-            <path class="flow-path" d="M170 243 C 170 260, 130 270, 90 280"/>
-            <path class="flow-path" d="M170 243 C 170 260, 210 270, 250 280"/>
-            <path class="flow-path" d="M170 243 C 150 265, 110 310, 90 340"/>
-            <path class="flow-path" d="M170 243 C 190 265, 230 310, 250 340"/>
-          </g>
-
-          <g class="dg-top">
-            <rect x="20" y="20" width="140" height="40" rx="10" class="dg-node"/>
-            <rect x="180" y="20" width="140" height="40" rx="10" class="dg-node"/>
-            <rect x="20" y="80" width="140" height="40" rx="10" class="dg-node"/>
-            <rect x="180" y="80" width="140" height="40" rx="10" class="dg-node"/>
-            <text x="90" y="44" class="dg-label">Finance</text>
-            <text x="250" y="44" class="dg-label">Operations</text>
-            <text x="90" y="104" class="dg-label">Inventory</text>
-            <text x="250" y="104" class="dg-label">Customer data</text>
-          </g>
-
-          <circle cx="170" cy="195" r="60" fill="url(#dgCoreM)" opacity="0.16" filter="url(#dgBlurM)"/>
-          <circle cx="170" cy="195" r="42" fill="url(#dgCoreM)"/>
-          <text x="170" y="199" class="dg-core-label">Jamun Labz</text>
-
-          <g class="dg-bottom">
-            <rect x="20" y="280" width="140" height="40" rx="10" class="dg-node"/>
-            <rect x="180" y="280" width="140" height="40" rx="10" class="dg-node"/>
-            <rect x="20" y="340" width="140" height="40" rx="10" class="dg-node"/>
-            <rect x="180" y="340" width="140" height="40" rx="10" class="dg-node"/>
-            <text x="90" y="304" class="dg-label">Reporting</text>
-            <text x="250" y="304" class="dg-label">Automation</text>
-            <text x="90" y="364" class="dg-label">Fulfilment</text>
-            <text x="250" y="364" class="dg-label">Client portal</text>
-          </g>
-        </svg>
+        <article class="why-item reveal">
+          <div class="why-num">05</div>
+          <h3>Relationships Built Through Work</h3>
+          <p>We believe trust develops through consistency, accountability, and delivering on commitments, not simply through promises.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES PREVIEW -->
+  <!-- CTA -->
   <section class="surface-paper section">
     <div class="wrap">
-      <div class="section-head reveal">
-        <h2>Where we usually start</h2>
-        <p>Most engagements touch more than one of these — see the full picture on the services page.</p>
-      </div>
-
-      <div class="services-strip reveal">
-        <a class="strip-card" href="services.html">
-          <div class="strip-num">01</div>
-          <h4>ERP Consulting</h4>
-          <p>Fixing the system of record without breaking what already works.</p>
-        </a>
-        <a class="strip-card" href="services.html">
-          <div class="strip-num">02</div>
-          <h4>Solutions Design</h4>
-          <p>Architecture for how your business should run, before anything is built.</p>
-        </a>
-        <a class="strip-card" href="services.html">
-          <div class="strip-num">03</div>
-          <h4>Project Management</h4>
-          <p>One point of accountability across every vendor and workstream.</p>
-        </a>
-        <a class="strip-card" href="services.html">
-          <div class="strip-num">04</div>
-          <h4>Digital Marketing</h4>
-          <p>Marketing systems that report back into the rest of the business.</p>
+      <div class="cta-panel reveal">
+        <h2>The Right Solution Starts With the Right Conversation</h2>
+        <p>Whether you're running a growing business or managing complex operations, we're ready to understand your challenges and explore what works for you.</p>
+        <a href="/contact.html" class="btn btn-primary">Let's Talk Business
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
         </a>
       </div>
     </div>
@@ -299,91 +313,75 @@
   <div class="wrap">
     <div class="footer-top">
       <div>
-        <div class="footer-brand">
-          <img src="logo_withoutBG_favicon_48x48.png" alt="" class="brand-mark">
+        <a href="/" class="footer-brand">
+          <img src="/icons/logo_withoutBG_favicon_48x48.png" alt="" class="brand-mark" width="32" height="32">
           Jamun Labz
-        </div>
-        <p class="footer-tag">A boutique consulting practice for businesses that need their systems to work together.</p>
-        
+        </a>
+        <p class="footer-tag">Boutique consulting for business systems, processes, and the technology decisions behind them.</p>
         <div class="social-links">
-          <!-- Email -->
-          <a href="mailto:#" aria-label="Email Us">
-            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <!-- Links still set to "#" are placeholders: replace "#" with the real profile URL. Until then they do nothing when clicked. -->
+          <a data-copy-email="info@jamunlabz.com" href="mailto:info@jamunlabz.com" aria-label="Email Jamun Labz">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
           </a>
-
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/company/jamun-labz/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
+          <a href="https://www.linkedin.com/company/jamun-labz/" target="_blank" rel="noopener noreferrer" aria-label="Jamun Labz on LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
           </a>
-
-          <!-- GitHub -->
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          <a href="https://github.com/JamunLabz" target="_blank" rel="noopener noreferrer" aria-label="Jamun Labz on GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
           </a>
-
-          <!-- Instagram -->
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          <a href="https://www.instagram.com/jamunlabz/" target="_blank" rel="noopener noreferrer" aria-label="Jamun Labz on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
           </a>
-
-          <!-- YouTube -->
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-            <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Jamun Labz on YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           </a>
-
-          <!-- X -->
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="X">
-            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Jamun Labz on X">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </a>
-
-          <!-- Facebook -->
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Jamun Labz on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
-
-          <!-- TikTok -->
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-            <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31 0 2.6.43 3.65 1.22.4.3.76.65 1.07 1.05a7.87 7.87 0 0 0 4.75 1.71V7.7a11.9 11.9 0 0 1-4.73-1.04v7.7c0 4.41-3.59 8-8 8s-8-3.59-8-8 3.59-8 8-8c.45 0 .9.04 1.33.11V10a4.34 4.34 0 0 0-1.33-.21c-2.38 0-4.32 1.94-4.32 4.32s1.94 4.32 4.32 4.32 4.32-1.94 4.32-4.32V0h2.94z"/></svg>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Jamun Labz on TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
           </a>
-
-          <!-- Threads -->
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Threads">
-            <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10A10 10 0 0 0 12 2zm3.72 13.56c-.63 1.05-1.57 1.63-2.82 1.63-1.8 0-3.08-1.23-3.08-3.1 0-2.12 1.54-3.32 3.63-3.32.96 0 1.77.22 2.3.56v-.55c0-1.2-.73-1.87-2.07-1.87-.97 0-1.74.33-2.32.78l-.8-1.12c.86-.68 2.01-1.09 3.32-1.09 2.37 0 3.67 1.25 3.67 3.42v5.66h-1.83v-1zm-1.83-.87c.7 0 1.34-.35 1.83-.98v-1.47a4.67 4.67 0 0 0-1.83-.39c-1.28 0-2.07.72-2.07 1.84 0 .97.69 1.63 2.07 1.63z"/></svg>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Jamun Labz on Threads">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"/></svg>
           </a>
-
-          <!-- Twitch -->
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
-            <svg viewBox="0 0 24 24"><path d="M2.149 0 1 4.286v16.071h5.357V24h3.75l3.214-3.643h4.822L23 15.536V0H2.149zm18.75 14.464-3.214 3.215h-5.357l-3.215 3.214v-3.214H5.357V2.143h15.542v12.321zm-8.035-7.5h2.143v6.429h-2.143V6.964zm-5.357 0h2.143v6.429H7.5V6.964z"/></svg>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Jamun Labz on Twitch">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.149 0 1 4.286v16.071h5.357V24h3.75l3.214-3.643h4.822L23 15.536V0H2.149zm18.75 14.464-3.214 3.215h-5.357l-3.215 3.214v-3.214H5.357V2.143h15.542v12.321zm-8.035-7.5h2.143v6.429h-2.143V6.964zm-5.357 0h2.143v6.429H7.5V6.964z"/></svg>
           </a>
         </div>
-
       </div>
       <div class="footer-cols">
         <div class="footer-col">
-          <h5>Jamun Labz</h5>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="contact.html">Contact</a>
+          <h2>Company</h2>
+          <a href="/">Home</a>
+          <a href="/services.html">Services</a>
+          <a href="/contact.html">Contact</a>
         </div>
         <div class="footer-col">
-          <h5>Start here</h5>
-          <a href="consult.html">Consult</a>
-          <a href="contact.html">Ask a question</a>
+          <h2>Services</h2>
+          <a href="/services.html#erp-consulting">ERP Consulting</a>
+          <a href="/services.html#development-integrations">Development &amp; Integrations</a>
+          <a href="/services.html#process-improvement">Process Improvement</a>
+          <a href="/services.html#technology-advisory">Technology Advisory</a>
+          <a href="/services.html#ongoing-support">Ongoing Support</a>
+          <a href="/services.html#project-management">Project Management</a>
         </div>
         <div class="footer-col">
-          <h5>Terms &amp; Policies</h5>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <h2>Legal</h2>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Use</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Jamun Labz - All Rights Reserved</span>
+      <span>&copy; 2026 Jamun Labz FZC. All rights reserved.</span>
+      <span>United Arab Emirates</span>
     </div>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="/script.js"></script>
 </body>
 </html>
