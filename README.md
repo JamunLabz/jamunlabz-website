@@ -3,6 +3,7 @@
 The official website of **Jamun Labz FZC**, a boutique business and technology consulting firm based in the United Arab Emirates.
 
 **Live site:** https://jamunlabz.com
+
 **Tagline:** Business First. Technology That Fits.
 
 This is a hand-built static website: plain HTML, CSS and JavaScript. There is no framework, no build step and no `npm install`. The site is hosted on **Cloudflare Pages**.
