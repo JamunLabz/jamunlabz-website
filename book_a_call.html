@@ -86,41 +86,14 @@
   <section class="surface-paper section-tight pt-0">
     <div class="wrap">
       <div class="booking reveal">
-        <div class="booking-card">
-
-          <!-- ================================================================
-               CALENDLY EMBED GOES HERE
-               ----------------------------------------------------------------
-               When your Calendly link is ready:
-               1. Delete the whole <div class="booking-placeholder"> ... </div> block below.
-               2. Remove the "<!- -" and "- ->" lines around the <iframe> just after it
-                  (written with a space here so this note doesn't break the page).
-               3. Replace YOUR-CALENDLY-LINK with your own link, for example
-                  jamun-labz/30min  (the part after https://calendly.com/).
-               The _headers file must also allow https://calendly.com in frame-src,
-               otherwise the browser blocks the calendar and this box stays empty.
-               ================================================================ -->
-
-          <div class="booking-placeholder">
-            <svg class="ico booking-placeholder-ico" viewBox="0 0 24 24" aria-hidden="true"><rect class="a" x="3.5" y="5" width="17" height="15.5" rx="3"/><path class="b" d="M3.5 10h17M8 3v4M16 3v4"/><path class="a" d="M8.5 14.5h2M13.5 14.5h2M8.5 17.5h2"/></svg>
-            <h2>Online booking opens soon</h2>
-            <p>Our booking calendar is being set up. Until then, send us a message and we'll arrange a time with you directly.</p>
-            <div class="booking-actions">
-              <a href="contact.html" class="btn btn-primary">Send us a message</a>
-              <a href="mailto:media@jamunlabz.com" class="btn btn-ghost" data-copy-email="media@jamunlabz.com">media@jamunlabz.com</a>
-            </div>
-          </div>
-
-          <!--
-          <iframe
-            class="booking-frame"
-            src="https://calendly.com/YOUR-CALENDLY-LINK?embed_type=Inline"
-            title="Book a call with Jamun Labz"
-            loading="eager"
-            referrerpolicy="strict-origin-when-cross-origin"></iframe>
-          -->
-
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget"
+          data-url="https://calendly.com/media-jamunlabz/consultation?hide_gdpr_banner=1&background_color=fffef7&text_color=3d2442&primary_color=5a3a5e"
+          style="min-width:320px; height:1250px;">
         </div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
+
         <p class="booking-tz">Times are shown in your own time zone.</p>
       </div>
     </div>

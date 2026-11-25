@@ -1735,6 +1735,7 @@ section{ position: relative; }
 @media (max-width: 1000px){ .booking-frame{ --booking-h: 960px; } }   /* tablets, iPad portrait */
 @media (max-width: 640px){ .booking-frame{ --booking-h: 1080px; } }   /* phones: Calendly stacks */
 
+
 /* ---------- Placeholder shown until Calendly is added ---------- */
 .booking-placeholder{
   display: flex;
@@ -1841,3 +1842,4 @@ nav a.nav-cta:focus-visible {
   transform: scale(1.06);
   box-shadow: 0 6px 18px rgba(91, 58, 99, 0.25);
 }
+
