@@ -1819,3 +1819,25 @@ section{ position: relative; }
   .booking-actions{ flex-direction: column; align-items: stretch; }
   .booking-actions .btn{ width: 100%; }
 }
+
+
+/* Book a Call button: always filled, grows on hover */
+.nav-links a.nav-cta,
+nav a.nav-cta {
+  background: #5B3A63;
+  color: #ffffff !important;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  display: inline-block;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+.nav-links a.nav-cta::after,
+nav a.nav-cta::after { display: none; } /* removes the underline used by the other menu links */
+
+.nav-links a.nav-cta:hover,
+nav a.nav-cta:hover,
+nav a.nav-cta:focus-visible {
+  background: #4A2E52;
+  transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(91, 58, 99, 0.25);
+}
