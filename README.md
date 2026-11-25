@@ -311,7 +311,7 @@ If you add, remove or rename a service, update all of these:
 
 ### Share image
 
-`og-image.png` (1200 × 630) shows the logo, "Jamun Labz" and the tagline. Social sites keep old copies for a long time, so if you replace it, raise the number in the `og:image` and `twitter:image` tags on every page (currently `og-image.png?v=2` → `?v=3`). Then check it with [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/).
+`og-image.png` (1200 × 630) shows the logo, "Jamun Labz" and the tagline. Social sites keep old copies for a long time, so if you replace it, raise the number in the `og:image` and `twitter:image` tags on every page (currently `og-image.png?v=3` → `?v=3`). Then check it with [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/).
 
 ### Forcing visitors to get a new CSS file
 
