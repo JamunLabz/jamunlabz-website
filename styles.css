@@ -16,9 +16,9 @@
 :root{
   --ink: #5A3A5E;            /* Jamun Plum — buttons, active nav, brand colour */
   --ink-soft: #6B5A6E;
-  /* --paper: #F7F4EE;         Paper — page background */
+  --paper: #FFFFFF;
   --paper-dim: #F1E9DA;      /*Cream */
-  --white: #FFFEF7;          /* Ivory White — cards */
+  --white: #FFFFFF;         /* Ivory White — cards */
   --line-on-paper: rgba(61,36,66,0.12);
   --line-on-ink: rgba(61,36,66,0.14);
 
@@ -164,7 +164,7 @@ section{ position: relative; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(247,244,238,0.82);
+  background: rgba(255,255,255,0.85);
   backdrop-filter: blur(16px) saturate(140%);
   -webkit-backdrop-filter: blur(16px) saturate(140%);
   border-bottom: 1px solid var(--line-on-paper);
